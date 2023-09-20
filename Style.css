@@ -154,7 +154,7 @@ label:hover:before {
 label:hover {
     color: black;
 }
-label:focus, a:active {
+label:focus, label:active {
     background-color: transparent;
     /* You can also add other styles as needed */
     outline: none; /* Remove the outline (often a border) around the element */
