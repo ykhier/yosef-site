@@ -154,6 +154,11 @@ nav a {
     a:hover {
         color:black;
     }
+a:focus, a:active {
+    background-color: transparent;
+    /* You can also add other styles as needed */
+    outline: none; /* Remove the outline (often a border) around the element */
+}
 /* Media query for screens smaller than 600px (typical mobile screens) */
 @media screen and (max-width: 600px) {
     .container {
@@ -186,5 +191,9 @@ nav a {
     button {
         padding: 12px 18px;
         font-size: 16px;
+    }
+    nav a {
+        font-size: 12px;
+        padding: 0 15px;
     }
 }
