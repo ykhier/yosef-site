@@ -6,16 +6,29 @@
     <link rel="stylesheet" href="Style.css"> <!-- Link to your CSS file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> <!-- Font Awesome icons -->
 
-    <title>Yosef site</title>
+    <title>Contact Us</title>
 </head>
 <body>
+    <script>
+    // Get the link element by its ID
+    var link = document.getElementById('custom-link');
+
+    // Add a click event listener
+    link.addEventListener('click', function(event) {
+        // Prevent the default link behavior
+        event.preventDefault();
+
+        // Manually navigate to the link URL
+        window.location.href = this.getAttribute('href');
+    });
+    </script>
 
     <header>
         <nav>
-            <label href="#"> Home </label>
-            <label href="#"> Menu </label>
-            <label href="#"> About </label>
-            <label href="#"> Contact </label>
+            <a href="#" id="custom-link"> Home </a>
+            <a href="#" id="custom-link"> Menu </a>
+            <a href="#" id="custom-link"> About </a>
+            <a href="#" id="custom-link"> Contact </a>
         </nav>
     </header>
     <section class="contact">
