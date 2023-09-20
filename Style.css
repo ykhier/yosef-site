@@ -114,7 +114,7 @@ nav {
     display:flex;
     justify-content:space-around;
 }
-nav label {
+nav a {
     position: relative;
     text-decoration: none;
     color: black;
@@ -124,8 +124,8 @@ nav label {
     font-weight: 700;
     transition: color .3s transform .3s;
 }
-label:before,
-label:after {
+a:before,
+a:after {
     content: "";
     position: absolute;
     height: 3px;
@@ -133,28 +133,28 @@ label:after {
     background-color: orangered;
     transition: width .5s,background-color .5s,transform .3s;
 }
-label:after {
+a:after {
     left: 0;
     bottom: -10px;
 }
-label:before {
+a:before {
     right: 0;
     top: -10px;
 }
-label:hover:after {
+a:hover:after {
     width: 100%;
     background-color: #3498db;
     transform: translateY(-5px);
 }
-label:hover:before {
+a:hover:before {
     width: 100%;
     background-color: #3498db;
     transform: translateY(5px);
 }
-label:hover {
+a:hover {
     color: black;
 }
-label:focus, label:active {
+a:focus, a:active {
     background-color: transparent !important;
     /* You can also add other styles as needed */
     outline: none; /* Remove the outline (often a border) around the element */
@@ -192,8 +192,8 @@ label:focus, label:active {
         padding: 12px 18px;
         font-size: 16px;
     }
-    nav label {
-        font-size: 15px;
+    nav a {
+        font-size: 12px;
         padding: 0 15px;
     }
 }
