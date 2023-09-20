@@ -155,7 +155,7 @@ label:hover {
     color: black;
 }
 label:focus, label:active {
-    background-color: transparent;
+    background-color: transparent !important;
     /* You can also add other styles as needed */
     outline: none; /* Remove the outline (often a border) around the element */
 }
